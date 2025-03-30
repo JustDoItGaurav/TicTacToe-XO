@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-section">
+        <h1><i class="fas fa-gamepad"></i> Tic Tac Toe</h1>
+
+        <div class="player-setup">
+          <div class="player-input">
+            <label for="player1"
+              ><i class="fas fa-user"></i> Player 1 (X)</label
+            >
+            <input
+              type="text"
+              id="player1"
+              placeholder="Enter Player 1 name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="player-input">
+            <label for="player2"
+              ><i class="fas fa-user"></i> Player 2 (O)</label
+            >
+            <input
+              type="text"
+              id="player2"
+              placeholder="Enter Player 2 name"
+              autocomplete="off"
+            />
+          </div>
+          <button id="startGame"><i class="fas fa-play"></i> Start Game</button>
+        </div>
+
+        <div class="score-board">
+          <div class="player-score">
+            <span id="player1Score">0</span>
+            <span id="player1Name">Player 1</span>
+          </div>
+          <div class="player-score">
+            <span id="player2Score">0</span>
+            <span id="player2Name">Player 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-section">
+        <div class="game-status">
+          <p id="currentPlayer">
+            <i class="fas fa-user-circle"></i> Current Player:
+            <span id="currentPlayerName">Player 1</span>
+          </p>
+          <p id="gameMessage"></p>
+        </div>
+
+        <div class="game-board">
+          <div class="cell" data-cell-index="0"></div>
+          <div class="cell" data-cell-index="1"></div>
+          <div class="cell" data-cell-index="2"></div>
+          <div class="cell" data-cell-index="3"></div>
+          <div class="cell" data-cell-index="4"></div>
+          <div class="cell" data-cell-index="5"></div>
+          <div class="cell" data-cell-index="6"></div>
+          <div class="cell" data-cell-index="7"></div>
+          <div class="cell" data-cell-index="8"></div>
+        </div>
+
+        <button id="restartGame">
+          <i class="fas fa-redo"></i> Restart Game
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
